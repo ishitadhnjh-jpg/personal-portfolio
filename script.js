@@ -295,4 +295,59 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         alert('Resume/CV download triggered. In a live production context, this link will reference a PDF document.');
     });
+
+    /* ==========================================
+       LIGHTBOX / MODAL PHOTO VIEWER
+       ========================================== */
+    const lightboxModal = document.getElementById('lightboxModal');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+    const lightboxClose = document.getElementById('lightboxClose');
+    
+    // Find all clickable photo containers
+    const clickablePhotos = document.querySelectorAll('.collage-frame, .achievement-card, .timeline-photo-wrapper');
+    
+    clickablePhotos.forEach(photo => {
+        photo.addEventListener('click', (e) => {
+            const target = e.currentTarget;
+            const imgSrc = target.getAttribute('data-image');
+            const captionText = target.getAttribute('data-caption');
+            
+            if (imgSrc) {
+                lightboxImg.src = imgSrc;
+                lightboxCaption.textContent = captionText || '';
+                lightboxModal.classList.add('active');
+                lightboxModal.setAttribute('aria-hidden', 'false');
+                body.style.overflow = 'hidden'; // Lock background scroll
+            }
+        });
+    });
+    
+    // Close Lightbox function
+    const closeLightbox = () => {
+        lightboxModal.classList.remove('active');
+        lightboxModal.setAttribute('aria-hidden', 'true');
+        body.style.overflow = ''; // Restore background scroll
+        setTimeout(() => {
+            lightboxImg.src = '';
+            lightboxCaption.textContent = '';
+        }, 300);
+    };
+    
+    lightboxClose.addEventListener('click', closeLightbox);
+    
+    // Close on clicking overlay background
+    lightboxModal.addEventListener('click', (e) => {
+        if (e.target === lightboxModal) {
+            closeLightbox();
+        }
+    });
+    
+    // Close on Escape key press
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightboxModal.classList.contains('active')) {
+            closeLightbox();
+        }
+    });
 });
+

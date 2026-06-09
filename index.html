@@ -27,6 +27,7 @@
                 <a href="#about" class="nav-link">About</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#experience" class="nav-link">Experience</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </nav>
 
@@ -91,10 +92,32 @@
                 </div>
             </div>
             <div class="hero-visual reveal-right">
-                <div class="avatar-wrapper">
-                    <img src="assets/avatar.png" alt="Ishita Tiwari Portrait" class="avatar-image">
-                    <div class="orbit-dot orbit-dot-1"></div>
-                    <div class="orbit-dot orbit-dot-2"></div>
+                <div class="photo-collage">
+                    <!-- Main Profile Frame -->
+                    <div class="collage-frame main-frame" data-image="assets/profile.jpg" data-caption="Ishita Tiwari">
+                        <img src="assets/profile.jpg" alt="Ishita Tiwari Profile" class="collage-img">
+                        <div class="frame-label">Ishita Tiwari</div>
+                    </div>
+                    <!-- Achievement 1 Frame -->
+                    <div class="collage-frame float-frame frame-1" data-image="assets/achievement4.jpg" data-caption="Academic & Technical Excellence: Recognized for academic honors and internship excellence.">
+                        <img src="assets/achievement4.jpg" alt="Academic Achievement" class="collage-img">
+                        <div class="frame-badge">Award</div>
+                    </div>
+                    <!-- Achievement 2 Frame -->
+                    <div class="collage-frame float-frame frame-2" data-image="assets/achievement1.jpg" data-caption="Co-curricular & Stage Honors: College event performance and leadership recognition.">
+                        <img src="assets/achievement1.jpg" alt="Group Event" class="collage-img">
+                        <div class="frame-badge">Event</div>
+                    </div>
+                    <!-- Achievement 3 Frame -->
+                    <div class="collage-frame float-frame frame-3" data-image="assets/achievement2.jpg" data-caption="Mathematics & Public Speaking Awards: Receiving college honors for debate and olympiad achievements.">
+                        <img src="assets/achievement2.jpg" alt="Award Ceremony" class="collage-img">
+                        <div class="frame-badge">Trophy</div>
+                    </div>
+                    <!-- Achievement 4 Frame -->
+                    <div class="collage-frame float-frame frame-4" data-image="assets/achievement3.jpg" data-caption="Debate Championships: Active presentation and representing the university on stage.">
+                        <img src="assets/achievement3.jpg" alt="Stage Performance" class="collage-img">
+                        <div class="frame-badge">Stage</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -130,6 +153,18 @@
                         <div class="stat-item glass-card">
                             <div class="stat-number">14</div>
                             <div class="stat-label">Years at Carmel</div>
+                        </div>
+                    </div>
+
+                    <!-- Carmel School Building Photos -->
+                    <div class="timeline-gallery" style="margin-top: 1.5rem;">
+                        <div class="timeline-photo-wrapper" data-image="assets/carmel_building1.jpg" data-caption="Carmel School, Digwadih — where Ishita spent 14 formative years from KG to Class 12." style="width: 155px; height: 105px;">
+                            <img src="assets/carmel_building1.jpg" alt="Carmel School Digwadih" class="timeline-photo">
+                            <div class="timeline-photo-label">Carmel School, Digwadih</div>
+                        </div>
+                        <div class="timeline-photo-wrapper" data-image="assets/carmel_building2.jpg" data-caption="Carmel School, Digwadih — the serene campus garden that inspired 14 years of learning." style="width: 155px; height: 105px;">
+                            <img src="assets/carmel_building2.jpg" alt="Carmel School Campus" class="timeline-photo">
+                            <div class="timeline-photo-label">School Campus</div>
                         </div>
                     </div>
                 </div>
@@ -214,6 +249,20 @@
             </div>
         </div>
     </section>
+<!-- Website Section -->
+<section class="section" id="website">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-subtitle">Live Web App</span>
+      <h2 class="section-title">lovestruc.me</h2>
+    </div>
+    <div class="project-image-wrapper">
+      <img src="assets/lovestruck_main.png" alt="lovestruc.me preview" class="project-img">
+    </div>
+    <p class="project-desc">Explore my live web application lovestruc.me, a platform for readers to discover and explore new novels with responsive UI and fast performance.</p>
+    <a href="https://lovestruc.me" target="_blank" class="btn btn-primary">Visit Site</a>
+  </div>
+</section>
 
     <!-- Projects Section -->
     <section class="section" id="projects">
@@ -235,7 +284,7 @@
                 <!-- Project 1: lovestruc.me -->
                 <div class="project-card glass-card reveal" data-category="webapp">
                     <div class="project-image-wrapper">
-                        <img src="file:///C:/Users/DELL/.gemini/antigravity/brain/2fe7a2ad-3783-43b7-bbcb-d7d383b924f5/lovestruc_website_1780900930640.png" alt="lovestruc.me Preview" class="project-img">
+                        <img src="assets/lovestruck_main.png" alt="lovestruc.me Preview" class="project-img">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="https://github.com/ishitatiwari/lovestruc.me" target="_blank" class="project-link-btn" aria-label="GitHub Repo">
@@ -266,11 +315,11 @@
                 <!-- Project 2: Rock Paper Scissors Game -->
                 <div class="project-card glass-card reveal" data-category="game">
                     <div class="project-image-wrapper">
-                        <img src="file:///C:/Users/DELL/.gemini/antigravity/brain/2fe7a2ad-3783-43b7-bbcb-d7d383b924f5/rock_paper_scissors_game_1780900948252.png" alt="Rock Paper Scissors Preview" class="project-img">
+                        <img src="assets/rock_paper_scissors.png" alt="Rock Paper Scissors Preview" class="project-img">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="https://github.com/ishitatiwari/rock-paper-scissors" target="_blank" class="project-link-btn" aria-label="GitHub Repo">
-                                    <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+`                                       <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
                                 </a>
                                 <a href="https://ishitatiwari.github.io/rock-paper-scissors" target="_blank" class="project-link-btn" aria-label="Live Demo">
                                     <svg viewBox="0 0 24 24"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
@@ -297,7 +346,7 @@
                 <!-- Project 3: Math Problem Solver -->
                 <div class="project-card glass-card reveal" data-category="utility">
                     <div class="project-image-wrapper">
-                        <img src="assets/project3.png" alt="Math Problem Solver Preview" class="project-img">
+                        <img src="assets/math_solver.png" alt="Math Problem Solver Preview" class="project-img">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="https://github.com/ishitatiwari/math-solver" target="_blank" class="project-link-btn" aria-label="GitHub Repo">
@@ -380,6 +429,17 @@
                             <h4 class="timeline-title">Bachelor of Technology (B.Tech)</h4>
                             <div class="timeline-org">University College of Engineering and Technology</div>
                             <p class="timeline-desc">First-year student pursuing Computer Science Engineering, building core foundations in data structures, algorithms, and computational principles.</p>
+                            <!-- College Building Photos -->
+                            <div class="timeline-gallery">
+                                <div class="timeline-photo-wrapper" data-image="assets/ucet_building1.jpg" data-caption="University College of Engineering and Technology — the main building of Ishita's engineering campus.">
+                                    <img src="assets/ucet_building1.jpg" alt="UCET Main Building" class="timeline-photo">
+                                    <div class="timeline-photo-label">UCET Main Block</div>
+                                </div>
+                                <div class="timeline-photo-wrapper" data-image="assets/ucet_building2.jpg" data-caption="University College of Engineering and Technology — campus building where Ishita pursues her B.Tech in CS.">
+                                    <img src="assets/ucet_building2.jpg" alt="UCET Campus" class="timeline-photo">
+                                    <div class="timeline-photo-label">UCET Campus</div>
+                                </div>
+                            </div>
                         </div>
                         
                         <!-- Carmel School -->
@@ -389,6 +449,17 @@
                             <h4 class="timeline-title">Higher Secondary Education</h4>
                             <div class="timeline-org">Carmel School, Digwadih</div>
                             <p class="timeline-desc">Completed 14 years of primary and secondary schooling. Successfully cleared standard board examinations and participated in debate and elocution contests.</p>
+                            <!-- Carmel School Building Photos -->
+                            <div class="timeline-gallery">
+                                <div class="timeline-photo-wrapper" data-image="assets/carmel_building1.jpg" data-caption="Carmel School, Digwadih — the school building where Ishita studied for 14 years from KG to Class 12.">
+                                    <img src="assets/carmel_building1.jpg" alt="Carmel School Digwadih Building" class="timeline-photo">
+                                    <div class="timeline-photo-label">Carmel School</div>
+                                </div>
+                                <div class="timeline-photo-wrapper" data-image="assets/carmel_building2.jpg" data-caption="Carmel School, Digwadih — the serene campus that shaped 14 years of learning and growth.">
+                                    <img src="assets/carmel_building2.jpg" alt="Carmel School Campus Garden" class="timeline-photo">
+                                    <div class="timeline-photo-label">School Campus</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -404,6 +475,183 @@
                         <line x1="12" y1="15" x2="12" y2="3"></line>
                     </svg>
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section" id="achievements">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Moments of Pride</span>
+                <h2 class="section-title">My Achievements</h2>
+            </div>
+            
+            <div class="achievements-grid">
+                <!-- Achievement Card 1 -->
+                <div class="achievement-card glass-card reveal" data-image="assets/achievement4.jpg" data-caption="Academic & Technical Excellence: Recognized for academic honors and internship excellence.">
+                    <div class="achievement-img-wrapper">
+                        <img src="assets/achievement4.jpg" alt="Academic & Technical Excellence" class="achievement-img">
+                        <div class="achievement-overlay">
+                            <svg class="zoom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                        </div>
+                    </div>
+                    <div class="achievement-content">
+                        <span class="achievement-tag">Academic Honors</span>
+                        <h3 class="achievement-title">Academic & Technical Honors</h3>
+                        <p class="achievement-desc">Awarded for outstanding performance, dedication, and technical competence in college forums and internship activities.</p>
+                    </div>
+                </div>
+
+                <!-- Achievement Card 2 -->
+                <div class="achievement-card glass-card reveal" data-image="assets/achievement2.jpg" data-caption="Mathematics & Public Speaking Awards: Receiving college honors for debate and olympiad achievements.">
+                    <div class="achievement-img-wrapper">
+                        <img src="assets/achievement2.jpg" alt="Mathematics & Public Speaking Awards" class="achievement-img">
+                        <div class="achievement-overlay">
+                            <svg class="zoom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                        </div>
+                    </div>
+                    <div class="achievement-content">
+                        <span class="achievement-tag">Olympiad & Debate</span>
+                        <h3 class="achievement-title">Olympiad & Debate Excellence</h3>
+                        <p class="achievement-desc">Honored with trophies and certificates for exceptional analytical and logical skills in math quizzes and debate competitions.</p>
+                    </div>
+                </div>
+
+                <!-- Achievement Card 3 -->
+                <div class="achievement-card glass-card reveal" data-image="assets/achievement1.jpg" data-caption="Co-curricular & Stage Honors: College event performance and leadership recognition.">
+                    <div class="achievement-img-wrapper">
+                        <img src="assets/achievement1.jpg" alt="Co-curricular & Stage Honors" class="achievement-img">
+                        <div class="achievement-overlay">
+                            <svg class="zoom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                        </div>
+                    </div>
+                    <div class="achievement-content">
+                        <span class="achievement-tag">Group Recognition</span>
+                        <h3 class="achievement-title">Stage Performances & Leadership</h3>
+                        <p class="achievement-desc">Active participation in co-curricular events and representation in inter-collegiate cultural and technical festivals.</p>
+                    </div>
+                </div>
+
+                <!-- Achievement Card 4 -->
+                <div class="achievement-card glass-card reveal" data-image="assets/achievement3.jpg" data-caption="Debate Championships: Active presentation and representing the university on stage.">
+                    <div class="achievement-img-wrapper">
+                        <img src="assets/achievement3.jpg" alt="Debate Championships" class="achievement-img">
+                        <div class="achievement-overlay">
+                            <svg class="zoom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                        </div>
+                    </div>
+                    <div class="achievement-content">
+                        <span class="achievement-tag">Public Speaking</span>
+                        <h3 class="achievement-title">Elocution & Stage Presence</h3>
+                        <p class="achievement-desc">Recognized for strong communication, eloquence, and presentation skills on various college and school stages.</p>
+                    </div>
+                </div>
+
+                <!-- Achievement Card 5 -->
+                <div class="achievement-card glass-card reveal" data-image="assets/achievement5.jpg" data-caption="Youth Leadership & Forums: Selected to represent the college at prestigious state-level technical and youth delegation seminars.">
+                    <div class="achievement-img-wrapper">
+                        <img src="assets/achievement5.jpg" alt="Youth Delegation Forum" class="achievement-img">
+                        <div class="achievement-overlay">
+                            <svg class="zoom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                        </div>
+                    </div>
+                    <div class="achievement-content">
+                        <span class="achievement-tag">Youth delegation</span>
+                        <h3 class="achievement-title">Youth Leadership & Forums</h3>
+                        <p class="achievement-desc">Selected to represent the college at prestigious state-level technical and youth delegation seminars.</p>
+                    </div>
+                </div>
+
+                <!-- Achievement Card 6 -->
+                <div class="achievement-card glass-card reveal" data-image="assets/achievement6.jpg" data-caption="Jharkhand State Youth Festival: Group recognition on the grand state stage for cultural representations.">
+                    <div class="achievement-img-wrapper">
+                        <img src="assets/achievement6.jpg" alt="Jharkhand State Youth Festival" class="achievement-img">
+                        <div class="achievement-overlay">
+                            <svg class="zoom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                        </div>
+                    </div>
+                    <div class="achievement-content">
+                        <span class="achievement-tag">Youth Festival</span>
+                        <h3 class="achievement-title">Jharkhand State Youth Festival</h3>
+                        <p class="achievement-desc">Part of the college delegation recognized at the Jharkhand State Youth Festival for drama and cultural display.</p>
+                    </div>
+                </div>
+
+                <!-- Achievement Card 7 -->
+                <div class="achievement-card glass-card reveal" data-image="assets/achievement7.jpg" data-caption="Mentorship and Leadership: Interacting with senior academicians and project directors during state-level engineering summits.">
+                    <div class="achievement-img-wrapper">
+                        <img src="assets/achievement7.jpg" alt="Mentorship Interaction" class="achievement-img">
+                        <div class="achievement-overlay">
+                            <svg class="zoom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                        </div>
+                    </div>
+                    <div class="achievement-content">
+                        <span class="achievement-tag">Leadership</span>
+                        <h3 class="achievement-title">Mentorship & Guidance</h3>
+                        <p class="achievement-desc">Interacting with senior academicians and project directors during state-level engineering summits.</p>
+                    </div>
+                </div>
+
+                <!-- Achievement Card 8 -->
+                <div class="achievement-card glass-card reveal" data-image="assets/achievement8.jpg" data-caption="State Representation & UCET Team: UCET delegation team standing with state representation representatives.">
+                    <div class="achievement-img-wrapper">
+                        <img src="assets/achievement8.jpg" alt="UCET Team Delegation" class="achievement-img">
+                        <div class="achievement-overlay">
+                            <svg class="zoom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                        </div>
+                    </div>
+                    <div class="achievement-content">
+                        <span class="achievement-tag">Team Representation</span>
+                        <h3 class="achievement-title">State Representation Team</h3>
+                        <p class="achievement-desc">Represented UCET at the state-level delegations focusing on technology and youth empowerment.</p>
+                    </div>
+                </div>
+
+                <!-- Achievement Card 9 -->
+                <div class="achievement-card glass-card reveal" data-image="assets/achievement9.jpg" data-caption="Cultural Drama & Stage Act: Won accolades for outstanding stage performance in the cultural fest's drama category.">
+                    <div class="achievement-img-wrapper">
+                        <img src="assets/achievement9.jpg" alt="Cultural Stage Drama" class="achievement-img">
+                        <div class="achievement-overlay">
+                            <svg class="zoom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                        </div>
+                    </div>
+                    <div class="achievement-content">
+                        <span class="achievement-tag">Stage Play</span>
+                        <h3 class="achievement-title">Cultural Drama & Stage Play</h3>
+                        <p class="achievement-desc">Won accolades for outstanding stage performance in the cultural fest's drama and play category.</p>
+                    </div>
+                </div>
+
+                <!-- Achievement Card 10 -->
+                <div class="achievement-card glass-card reveal" data-image="assets/carmel_performance.jpg" data-caption="Rani Laxmibai Character Act: Portraying the great Rani Laxmibai on stage at Carmel School, Digwadih — delivering a dramatic speech performance.">
+                    <div class="achievement-img-wrapper">
+                        <img src="assets/carmel_performance.jpg" alt="Rani Laxmibai Stage Performance at Carmel School" class="achievement-img">
+                        <div class="achievement-overlay">
+                            <svg class="zoom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                        </div>
+                    </div>
+                    <div class="achievement-content">
+                        <span class="achievement-tag">Historical Role Play</span>
+                        <h3 class="achievement-title">Rani Laxmibai Character Act</h3>
+                        <p class="achievement-desc">Portrayed Rani Laxmibai in a historical stage play at Carmel School, Digwadih — combining dramatic speech delivery with powerful stage presence.</p>
+                    </div>
+                </div>
+
+                <!-- Achievement Card 11 -->
+                <div class="achievement-card glass-card reveal" data-image="assets/carmel_celebration.jpg" data-caption="Independence Day Patriotic Drama: Dressed as national heroes to honour Indian freedom fighters during Carmel School celebrations.">
+                    <div class="achievement-img-wrapper">
+                        <img src="assets/carmel_celebration.jpg" alt="Independence Day Celebration at Carmel School" class="achievement-img">
+                        <div class="achievement-overlay">
+                            <svg class="zoom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                        </div>
+                    </div>
+                    <div class="achievement-content">
+                        <span class="achievement-tag">Patriotic Play</span>
+                        <h3 class="achievement-title">Independence Day Celebrations</h3>
+                        <p class="achievement-desc">Participated in patriotic dramas representing Indian national leaders during Carmel School Independence Day celebrations, honouring the spirit of freedom fighters.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -517,6 +765,15 @@
             </button>
         </div>
     </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightboxModal" aria-hidden="true">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close image">&times;</button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImg">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
 
     <!-- Script -->
     <script src="script.js"></script>
